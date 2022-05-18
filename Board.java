@@ -131,14 +131,14 @@ public class Board{
         if(topRowCountX == 3 || middleRowCountX == 3 || bottomRowCountX == 3
         || leftColCountX == 3 || middleColCountX == 3 || rightColCountX == 3
         || leftDiagnolX == 3 || rightDiagnolX == 3){
-            //System.out.println("X's win!");
+            System.out.println("X's win!");
             return true;
         }
 
         if(topRowCountO == 3 || middleRowCountO == 3 || bottomRowCountO == 3
         || leftColCountO == 3 || middleColCountO == 3 || rightColCountO == 3
         || leftDiagnolO == 3 || rightDiagnolO == 3){
-            //System.out.println("O's win!");
+            System.out.println("O's win!");
             return true;
         }
 
@@ -195,5 +195,10 @@ public class Board{
             }
             counter++;
         }
+
+        if(!this.winCondition()){
+            System.out.println("Cat's game!");
+        }
+        
     }
 }
