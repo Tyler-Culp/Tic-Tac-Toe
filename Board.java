@@ -199,6 +199,6 @@ public class Board{
         if(!this.winCondition()){
             System.out.println("Cat's game!");
         }
-        
+        scan.close();
     }
 }
